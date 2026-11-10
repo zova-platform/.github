@@ -1,0 +1,46 @@
+name: Bug report
+description: Something is not working as expected
+title: "bug: "
+labels: ["bug"]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: Repository or service
+      description: Where does the bug happen?
+      placeholder: trip-service
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What did you see? Include error messages or log lines with trace_id if you have them.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Start the stack with `task up`
+        2. Request a trip from passenger-web
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: v0.2.0 or a1b2c3d
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: Screenshots, Grafana links, related issues.
