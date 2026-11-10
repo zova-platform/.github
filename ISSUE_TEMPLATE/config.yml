@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Architecture and plan
+    url: https://github.com/zova-platform/docs
+    about: Read the docs before opening an issue about design.

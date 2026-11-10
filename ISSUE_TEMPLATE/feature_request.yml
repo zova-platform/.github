@@ -1,0 +1,40 @@
+name: Feature or task
+description: New feature or a step from docs/plan.md
+title: "feat: "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: plan-step
+    attributes:
+      label: Plan step
+      description: Step number from docs/plan.md, if any
+      placeholder: "1.6"
+  - type: input
+    id: repo
+    attributes:
+      label: Repository or service
+      placeholder: dispatch-service
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Why
+      description: What problem does this solve, or what does it unlock?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What to build
+      description: APIs, events or tables that change.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: Checklist that proves it works.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
